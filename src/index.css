@@ -1,0 +1,68 @@
+/* Global Styles & Dark Mode Fixes */
+
+/* Ensure dark background covers the entire viewport */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #252836 !important; /* Match MainLayout background */
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #252836; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EA7C69; /* Brand Color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d96552; 
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Model Viewer Customization */
+model-viewer {
+  --progress-bar-color: #EA7C69;
+}
+
+/* --- Responsive Utilities --- */
+@media (max-width: 600px) {
+  /* Prevent horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Adjust container padding on mobile */
+  .MuiContainer-root {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+/* Smooth transitions for responsive changes */
+* {
+  transition: padding 0.3s ease, margin 0.3s ease;
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "VNFood",
+  "name": "VN Food Handbook",
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#EA7C69",
+  "background_color": "#1F1D2B"
+}

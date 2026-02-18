@@ -35,7 +35,7 @@ The application contains some basic features of a Food Blog such as:
 - Local Static Storage (Images)
 
 **AI & Machine Learning:**
-- PyTorch (ResNet-18 model for Food Classification - 36 classes)
+- PyTorch (ResNet-18 model for Food Classification - currently 36 classes)
 - Google Gemini API (Chef Chatbot)
 
 ## Features
@@ -108,7 +108,7 @@ The server will start at http://localhost:8000
 Install packages:
 
 ```bash
-npm install
+npm install -r requirements.txt
 ```
 
 Start the React application:

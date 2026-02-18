@@ -71,7 +71,7 @@ cd backend
 Install dependencies:
 
 ```bash
-pip install fastapi uvicorn sqlalchemy mysql-connector-python torch torchvision python-multipart python-dotenv google-generativeai firebase-admin pillow
+pip install -r requirements.txt
 ```
 
 Create a `.env` file in the root of the backend folder:
@@ -108,7 +108,7 @@ The server will start at http://localhost:8000
 Install packages:
 
 ```bash
-npm install -r requirements.txt
+npm install
 ```
 
 Start the React application:

@@ -2,11 +2,14 @@
 
 VN Food Handbook is a web application designed to help tourists and food enthusiasts explore Vietnamese cuisine. The system combines a standard food dictionary with AI-powered features, allowing users to identify dishes via images and interact with a virtual culinary chef.
 
-This project was developed as a university group project at USTH.
+This project was developed as a university group project.
+
+> [!NOTE]
+> This project is done with 30% help of AI (a vibe-coding project).
 
 ## Overview
 
-The application solves the problem of information fragmentation regarding Vietnamese food. It provides a centralized platform where users can:
+The application contains some basic features of a Food Blog such as:
 - Search and filter traditional dishes.
 - Use a camera or upload photos to identify food using a trained AI model.
 - Ask questions about recipes and culture via an AI Chatbot.
@@ -58,41 +61,60 @@ The application solves the problem of information fragmentation regarding Vietna
 3. Update your database credentials in the backend configuration.
 
 ### 3. Backend Setup
+
 Navigate to the backend directory:
 
 ```bash
 cd backend
-
+```
 
 Install dependencies:
-`pip install fastapi uvicorn sqlalchemy mysql-connector-python torch torchvision python-multipart python-dotenv google-generativeai firebase-admin pillow`
 
-Create a .env file in the root of the backend folder:
-`DB_HOST=localhost
+```bash
+pip install fastapi uvicorn sqlalchemy mysql-connector-python torch torchvision python-multipart python-dotenv google-generativeai firebase-admin pillow
+```
+
+Create a `.env` file in the root of the backend folder:
+
+```env
+DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_mysql_password
 DB_NAME=vnfood_db
 GEMINI_API_KEY=your_gemini_api_key
-BACKEND_URL=http://localhost:8000 `
+BACKEND_URL=http://localhost:8000
+```
 
 Add your Firebase credentials:
 
-Place your serviceAccountKey.json file in the backend root directory.
+Place your `serviceAccountKey.json` file in the backend root directory.
 
 Run the server:
-`python server.py
+
+```bash
+python server.py
 # or
-uvicorn server:app --reload`
+uvicorn server:app --reload
+```
 
 The server will start at http://localhost:8000
 
-4. Frontend Setup
-Navigate to the frontend directory:
-`cd frontend`
+> [!NOTE]
+> You shoulde run frontend and backend folders independently.
+> Download checkpoint file for AI recognition feature at `https://drive.google.com/file/d/18oGUak9XRLljBZ-M-ZY4EzPhCOOVvZJi/view?usp=sharing`
+
+### 4. Frontend Setup
 
 Install packages:
-`npm install`
+
+```bash
+npm install
+```
 
 Start the React application:
-`npm start`
+
+```bash
+npm start
+```
+
 The application will run at http://localhost:3000

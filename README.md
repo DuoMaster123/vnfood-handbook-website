@@ -5,7 +5,8 @@ VN Food Handbook is a web application designed to help tourists and food enthusi
 This project was developed as a university group project.
 
 > [!NOTE]
-> This project is done with 30% help of AI (a vibe-coding project).
+> There are some missing files such as 3D models, sql database. Their sizes are too large to upload on Github.
+> You can see the web interface demo in `demo/`
 
 ## Overview
 
